@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Loan Eligibility Checker San Jose Bank</title>
+<style>
+#main{
+	margin-left: 400px;
+}
+.class{
+	width : 100px;
+}
+
+#name{
+	margin-left: 166px;
+}
+#lname{
+	margin-left: 126px;
+}
+#anInc{
+	margin-left: 90px;
+}
+#ssn{
+	margin-left: 178px
+}
+#crdScore{
+	margin-left: 115px
+}
+#chkElg{
+	margin-left: 215px;
+	width : 180px;
+}
+#mnthl{
+	margin-left: 60px
+}
+#lnAmt{
+	margin-left: 100px
+}
+</style>
+<script src="eligibilityChecker.js"></script>
+</head>
+<body>
+<div id="main">
+<h4>San Jose Bank</h4>
+	<table>
+		<tr>
+			<td>
+				<label class = "ip">Name</label><input class = "ipdet" type = "text" id = "name"><br><br>
+				<label class = "ip">Last Name</label><input class = "ipdet" type = "text" id = "lname"><br><br>
+				<label class = "ip">Loan Amount</label><input class = "ipdet" type = "text" id = "lnAmt"><br><br>
+				<label class = "ip">Annual Income</label><input class = "ipdet" type = "text" id = "anInc"><br><br>
+				<label class = "ip">Monthly Liabilities</label><input class = "ipdet" type = "text" id = "mnthl"><br><br>
+				<label class = "ip">Account in San Jose Bank</label>
+				<select id="prevBank">
+					<option value="y">Yes</option>
+					<option value="n">No</option>
+				</select><br><br>
+				<label class = "ip">SSN</label><input class = "ipdet" type = "text" id = "ssn"><br><br>
+				<label class = "ip">Credit Score</label><input class = "ipdet" type = "text" id = "crdScore"><br><br>
+			</td>
+			<td>
+				<p id="dispempdet"></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</br>
+				<input type="button" id="chkElg" name="checkEligibility" value="Check Eligibility" onclick="createObject()"></br></br>
+				<textarea id="ans" cols="37" rows="6"></textarea>
+			</td>
+		</tr>
+
+</table>
+</div>
+</body>
+</html>

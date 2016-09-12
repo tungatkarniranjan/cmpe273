@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Address Validator</title>
+<style>
+#main{
+	margin-left: 400px;
+}
+#addr{
+	margin-left: 30px;
+}
+#city{
+	margin-left: 60px;
+}
+#zip{
+	margin-left: 20px;
+}
+#state{
+	margin-left: 53px;
+}
+#conAdd{
+	margin-left: 93px;
+	width : 180px;
+}
+</style>
+<script src="errorHandling.js"></script>
+</head>
+<body>
+<div id="main">
+<h4>Bay Area Address Validator</h4>
+	<table>
+		<tr>
+			<td>
+				<label class = "ip">Address</label><input class = "ipdet" type = "text" id = "addr"><br><br>
+				<label class = "ip">City</label><input class = "ipdet" type = "text" id = "city"><br><br>
+				<label class = "ip">Zip Code</label><input class = "ipdet" type = "text" id = "zip"><br><br>
+				<label class = "ip">State</label><input class = "ipdet" type = "text" id = "state"><br><br>
+			</td>
+			<td>
+				<p id="dispempdet"></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</br>
+				<input type="button" id="conAdd" name="conAdd" value="Confirm Address" onclick="checkAddress()"></br></br>
+			</td>
+		</tr>
+
+</table>
+</div>
+</body>
+</html>

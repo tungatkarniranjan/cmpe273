@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Airport Checker</title>
+<style>
+#main{
+	margin-left: 200px;
+}
+#location{
+	width: 198px;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<h4>Aiport Conditions Checker App</h4>
+<table>
+	<tr>
+		<td></td>
+		<td>
+			<select id="location">
+				<option id="SFO">SFO</option>
+				<option id="SJC">SJC</option>
+				<option id="LAX">LAX</option>
+				<option id="AUS">AUS</option>
+				<option id="BOS">BOS</option>
+				<option id="CLE">CLE</option>
+				<option id="JFK">JFK</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			<input type="button" id="check" name="checktraffic" value="Check Aiport Conditions" onclick="getAirportDetails()">
+		</td>
+
+	</tr>
+</table>
+<textarea id = "disp" rows = "10" cols="40"></textarea>
+<script src="airporttraffic.js"></script>
+</div>
+</body>
+</html>

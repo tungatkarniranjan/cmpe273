@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bollywood Songs/Videos</title>
+<style>
+
+#main{
+	width : 1000px;
+	height: 500px;
+	margin-top: 150px;
+	margin-left: 300px;
+	margin-right: 100px;
+	
+}
+#audiolist{
+	
+	list-style-type: none;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: #F8F8FF;
+	width :600px;
+	height: 690px;
+}
+
+li{
+	text-align: center;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 3px;
+	padding-top: 10px;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width : 550px;
+	background-color: #E6E6FA;
+}
+label{
+	display: block;
+	text-align: left;
+	font-size: 20px;
+}
+#left{
+	width : 610px;
+	float: left;
+}
+#right{
+	width: 200px;
+	float : left;
+}
+#slctvid{
+	margin-top: 0px;
+	width : 408px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: #E6E6FA;
+	margin-left: 180px;
+}
+#vidHead{
+
+	padding: 5px;
+	border-radius: 5px;
+	background-color:#8A0868;
+	height: 25px;
+	color: #F8E0F7;
+	text-align: center;
+	width : 400px;
+	vertical-align: middle;
+	display: block;
+	font-size: 20px;
+	margin-left: 180px;
+}
+#videocontainer{
+	width: 300px;
+	height: 360px;
+	margin-left: 80px;
+	margin-top: 10px;
+
+}
+
+</style>
+</head>
+<body>
+<div id="main">
+<div id="left">
+		<ul id = "audiolist" style="list-style-type:none">
+		<li value="Tu Hai">
+			<label>Tu Hai - Mohenjodaro</label>
+			<audio id ="first" controls="controls">
+				<source src="tu-hai.mp3" type="audio/mp3">
+			</audio>
+		</li>
+		<li>
+			<label>Kala Chasma - Baar Baar Dekho</label>
+				<audio controls="controls">
+					<source src="Kala-Chasma.mp3" type="audio/mp3">
+				</audio>
+		</li>
+		<li>
+			<label>Ae Dil hai Mushkil - Ae Dil hai Mushkil</label>
+				<audio controls="controls">
+					<source src="aedilhaimushkil.mp3" type="audio/mp3">
+				</audio>
+		</li>
+		<li>
+			<label>Bappa - Banjo</label>
+				<audio controls="controls">
+					<source src="banjo.mp3" type="audio/mp3">
+				</audio>
+		</li>
+		<li>
+			<label>Har Ghar Mai Dhoni Hai - M S Dhoni</label>
+				<audio controls="controls">
+					<source src="hargullymaidhonihai.mp3" type="audio/mp3">
+				</audio>
+		</li>
+	</ul>
+</div>
+
+<div id = "right">
+<h5 id ="vidHead">Do You Want to Watch a Video</h5>
+	<select id="slctvid">
+		<option value = "msd">Mahendra Sigh Dhoni : Untold Story</option>
+		<option value = "rockon2">Rock On 2</option>
+	</select>
+	<div id="videocontainer"></div>
+</div>
+	
+	
+</div>
+
+
+<script src="mediaplayer.js"></script>
+</body>

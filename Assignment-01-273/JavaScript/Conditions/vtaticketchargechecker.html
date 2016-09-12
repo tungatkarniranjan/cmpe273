@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>VTA Tariffs</title>
+<style>
+
+#container{
+margin-left : 600px;
+}
+
+#chktrf{
+margin-left : 100px;
+width : 290px;
+}
+#std{
+margin-left : 60px;
+}
+
+.ability{
+margin-left : 215px;
+}
+#ageRange{
+margin-left : 60px;
+}
+
+</style>
+<script src="vtaticketchargechecker.js">
+</script>
+
+</head>
+<body>
+<div id="container">
+Valley Transportation Authority Tariff page!!<br><br>
+Select Age Range:
+<select id = "ageRange">
+	<option value="l8">Less than 8 years</option>
+	<option value="l16">Less than 16 years</option>
+	<option value="g16">16 - 60 years</option>
+	<option value="g60">60 and above</option>
+</select><br><br>
+Do you have a disability:<br>
+<input type="radio" name="abl" id="abl1" class = "ability" value="Yes">Yes<br>
+<input type="radio" name="abl" id="abl2" class = "ability" value="No">No<br><br>
+Are you a Student:
+<select id = "std">
+	<option value="Yes">Yes</option>
+	<option value="No">No</option>
+</select><br><br>
+<input type = "button" id = "chktrf" onclick="getTariff()" value="Calculate Tariff">
+</div>
+<div id="actariff"></div>
+</body>
+</html>

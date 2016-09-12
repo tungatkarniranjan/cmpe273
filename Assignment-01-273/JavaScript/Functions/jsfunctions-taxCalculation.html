@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Free Tax Calculation!</title>
+<script src="taxCalculation.js">
+</script>
+</head>
+<body>
+<form action="">
+Enter Annual Household Income: <input type="text" id="mnthIncome"><br><br>
+Filing Status 
+<select id="status">
+	<option value="m">Married</option>
+	<option value="s">Single</option>
+</select><br><br>
+<input type="radio" name="state" id="st1" value="California">California<br>
+<input type="radio" name="state" id="st2" value="Texas">Texas<br>
+<input type="radio" name="state" id="st3" value="Indiana">Indiana<br><br>
+<input type="button" onclick="calTax()" value="Check Tax"> 
+
+</form>
+</body>
+</html>

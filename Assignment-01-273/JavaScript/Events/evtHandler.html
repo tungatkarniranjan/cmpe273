@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Furniture Store</title>
+<style type="text/css">
+#main{
+margin-left : 200px
+}
+#prcQty{
+margin-top : 600px;
+}
+
+
+img{
+width : 200px;
+height : 150px;
+position : absolute;
+}
+
+.hide{
+margin-left : 50px;
+display : none;
+}
+td{
+margin-left: 50px;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<table>
+<tr>
+	<td>
+		<div id="container">
+		<h4>Products</h4>
+		<ul>
+			<li><a data-img="prd1pic" id = "prpic1" href="#" value ="abc">Home Life Memory Foam Mattress</a></li>
+			<li><a data-img="prd2pic" id = "prpic2" href="#">Ultra Light Iron Chair</a></li>
+			<li><a data-img="prd3pic" id = "prpic3" href="#">Manstays Wooden Table</a></li>
+		</ul>
+		</div>
+	</td>
+	<td id="imgDisp">
+		<div id="container2">
+			<img class="hide" id="prd1pic" src="Mattress.jpg" >
+			<img class="hide" id="prd2pic" src="iron_chair.jpg" >
+			<img class="hide" id="prd3pic" src="wooden_table.jpg" >
+		</div>
+	</td>
+</tr>
+<tr id="prcQty">
+	<td>
+		Qty: 
+		<select id ="qty"> 
+			<option value = "1">1</option>
+			<option value = "2">2</option>
+			<option value = "3">3</option>
+			<option value = "4">4</option>
+			<option value = "5">5</option>
+		</select>
+		<p id="total"></p>
+	</td>
+</tr>
+</table>
+</div>
+
+
+<script src="evtHandler.js">
+</script>
+
+
+</body>
+</html>

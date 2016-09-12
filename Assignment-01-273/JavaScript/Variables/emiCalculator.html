@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>EMI Calculator</title>
+<style>
+.ipdet{
+	margin-left: 20px;
+	width : 200px;
+}
+#principal{
+	width : 200px;
+	margin-left: 55px;
+}
+#duration{
+	width : 200px;
+	margin-left:95px;
+}
+#main{
+	margin-left : 200px;
+	margin-top: 50px;
+}
+#calEmi{
+	margin-left:250px;
+	width : 150px;
+}
+</style>
+<script src="emiCalculator.js"></script>
+</head>
+<body>
+<div id="main">
+	<table>
+		<tr>
+			<td>
+				<label class = "ip">Loan Amount(P)</label><input class = "ipdet" type = "text" id = "principal"><br><br>
+				<label class = "ip">Duration(T)</label><input class = "ipdet" type = "text" id = "duration">
+				<select id="yrsMnths">
+					<option value="m">Months</option>
+					<option value="y">Years</option>
+				</select><br><br>
+				<label class = "ip">Rate Of Interest(R)%</label><input class = "ipdet" type = "text" id = "roi"><br><br>
+				
+			</td>
+			<td>
+				<p id="dispempdet"></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</br>
+				<input type="button" id="calEmi" name="emicalculator" value="Calculate EMI" onclick="calculateMonthlyEmi()"></br></br>
+				<textarea id="ans" cols="40" rows="4"></textarea>
+			</td>
+		</tr>
+
+</table>
+</div>
+</body>
+</html>

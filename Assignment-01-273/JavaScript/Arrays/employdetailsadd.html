@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employ Management System</title>
+<style>
+
+#main{
+	margin-top: 50px;
+}
+.empd{
+margin-left : 60px;
+width : 200px
+}
+
+#empid{
+margin-left : 48px}
+#acc{
+margin-left : 40px}
+
+#cnum{
+margin-left : 46px}
+
+.empdtag{
+margin-left : 40px;
+width : 50px;
+}
+#adtbtn{
+	margin-left: 150px;
+	width: 200px
+}
+
+#dispempdet{
+	margin-left: 200px;
+	width: 200px
+}
+
+#dispAll{
+margin-left: 150px;
+	width: 200px
+}
+
+#dltEmpbtn{
+margin-left: 150px;
+	width: 200px
+}
+#dltIdtxt{
+margin-left: 20px;
+	width: 200px
+}
+#dispAlldet{
+margin-left: 150px;
+	width: 200px
+}
+</style>
+</head>
+<body>
+<div id="main">
+	<table>
+		<tr>
+			<td>
+				<label class = "empdtag">Emp Id</label><input class = "empd" type = "text" id = "empid"><br><br>
+				<label class = "empdtag">Name</label><input class = "empd" type = "text" id = "name"><br><br>
+				<label class = "empdtag">Email</label><input class = "empd" type = "text" id = "email"><br><br>
+				<label class = "empdtag">Account</label><input class = "empd" type = "text" id = "acc"><br><br>
+				<label class = "empdtag">Contact</label><input class = "empd" type = "text" id = "cnum"><br><br>
+				<input type="button" id="adtbtn" name="adddetbtn" value="Add Employ" onclick="addDetails()">
+			</td>
+			<td>
+				<p id="dispempdet"></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</br>
+				<input type="button" id="dispAll" name="dispallemp" value="Display All Employees" onclick="dispAllEmp()"></br></br>
+				<label class = "empdtag">Delete ID :</label><input type="text" id="dltIdtxt" name ="deleteemp"></br></br>
+				<input type="button" id="dltEmpbtn" name="dltEmployee" value="Delete Employee Record" onclick="removeEmployee()">
+			</td>
+		</tr>
+
+</table>
+</div>
+<p id="dispAlldet"></p>
+<script src="employdetails.js"></script>
+
+
+</body>
+</html>

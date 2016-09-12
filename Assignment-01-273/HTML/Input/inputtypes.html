@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+
+<link rel="stylesheet" type="text/css" href="bookregister.css">
+</head>
+<body>
+<form action=# autocomplete="on">
+	<div id ="main">
+	<h4 id="header">Register For Monthly Book Service</h4>
+	<div class="wrapper">
+		<label value="Name">Name</label>
+		<input class="input" type="text" id="name" placeholder="First Name Last Name" autofocus required><br>
+	</div>
+	<div class="wrapper">
+		<label value="Name">Username</label>
+		<input class="input" type="text" id="usrname" placeholder="At least 5 characters" required><br>
+	</div>
+	<div class="wrapper">
+		<label value="E-mail">E-mail</label>
+		<input class="input" type="email" id="email" placeholder="abc@xyz.com" required><br>
+	</div>
+	<div class="wrapper">
+		<label value="Contact Number">Contact Number</label>
+		<input class="input" type="text" id="number" pattern="[0-9]{10}" placeholder="1234567890" required><br>
+	</div>
+	<div class="wrapper">
+		<label value="url">Website</label>
+		<input class="input" type="url" id="website" placeholder="http://mybio.com"><br>
+	</div>
+	<div class="wrapper">
+		<label value="dob">Date Of Birth</label>
+		<input class="input" type="date" id="dob" required><br>
+	</div>
+	<div class="wrapper">
+		<label value="dob">Gender</label>
+		<input  class="radio" type="radio" name ="gender" id="male" value="Male">Male
+		<input  class="radio" type="radio" name ="gender" id="female" value="Female">Female<br>
+	</div>
+	<div class="wrapper">
+		<label value="dob">Interest</label>
+			<input class="input" list="interest" name="interests"  multiple>
+			<datalist class="input" id="interest">
+				<option value="History">
+				<option value="Astronomy">
+				<option value="Geography">
+				<option value="Biology">
+			</datalist>
+	</div>
+
+
+	<hr id="differentiator">
+	<h6 id="subheadings">Delivery Details</h6>
+	<div class="wrapper">
+		<label value="dob">Delivery Type</label>
+		<select class="input" id="deltype" required>
+			<option id="USPS">USPS</option>
+			<option id="FedEx">FedEx</option>
+		</select>
+	</div>
+	<div class="wrapper">
+		<label value="deltime" margin-top="10px">Delivery Time</label>
+		From :<input  class="input" type="time" name ="deltime" id="from" >
+	</div>
+	<div class="wrapper">
+		<label value="deltime" margin-top="10px"></label>
+		To :<input  class="input" type="time" name ="deltime" id="to">
+	</div>
+
+
+	<hr id="differentiator">
+	<h6 id="subheadings">Billing Address</h6>	
+	<div class="wrapper">
+		<label value="billaddr">Billing Addr.</label>
+		<input class="input" type="text" id="addr" placeholder="Block Street Name #Apt No., City" required><br>
+	</div>
+	<div class="wrapper">
+		<label value="Zip Code">Postal Code</label>
+		<input class="input" type="text" id="zipcode" pattern="[0-9]{5}" placeholder="95110" required><br>
+	</div>
+	<div class="wrapper">
+		<label value="city">City</label>
+		<input class="input" type="text" id="city" placeholder="San Jose" required><br>
+	</div>
+
+
+	<hr id="differentiator">
+	<h6 id="subheadings">Payment Details</h6>
+	<div class="wrapper">
+		<label value="nmeCard">Name on Card</label>
+		<input class="input" type="text" id="namecard" required><br>
+	</div>
+	<div class="wrapper">
+		<label value="crdNum">Card Number</label>
+		<input class="input" type="text" id="numcard" pattern="[0-9]{16}" required><br>
+	</div>
+	<div class="wrapper">
+		<label value="secCode">Security Code</label>
+		<input class="input" type="text" id="seccode" required><br>
+	</div>
+	<div class="wrapper">
+		<label value="expd">Expiry Date</label>
+		<input class="input" type="date" id="expdate" required><br>
+	</div>
+	<div>
+		<input type="submit" id="register" value="Register">
+	</div>
+	
+</div>
+</form>
+
+
+</body>
+</html>
