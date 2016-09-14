@@ -9,6 +9,7 @@ import edu.sjsu.queues.QueueSimulation;
 
 public class QueueSimulationTest {
 
+	//Test CalTotalmins of QueueSimulation Class
 	@Test
 	public void testCalTotalmins() {
 		QueueLinkedList q1 = new QueueLinkedList();
@@ -19,10 +20,10 @@ public class QueueSimulationTest {
 		System.out.println("Total Mins : "+QueueSimulation.calTotalmins(q1));
 		assertEquals(15, QueueSimulation.calTotalmins(q1));
 	}
-
+	
+	//Test Checkfeasibility of QueueSimulation Class
 	@Test
 	public void testCheckfeasiblity() {
-		//fail("Not yet implemented");
 		QueueLinkedList q1 = new QueueLinkedList();
 		q1.addLast("Helena", 45);
 		q1.addLast("Michael", 55);
