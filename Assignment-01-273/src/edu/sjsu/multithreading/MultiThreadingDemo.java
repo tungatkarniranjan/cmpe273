@@ -39,7 +39,7 @@ public class MultiThreadingDemo {
 						exTransaction = new execTransaction("w",Double.parseDouble(user_ip.nextLine()),atbTrans,tID);
 						Thread.sleep(10);
 					}
-					//exTransaction.t.join();
+					
 				}
 				else
 					break;

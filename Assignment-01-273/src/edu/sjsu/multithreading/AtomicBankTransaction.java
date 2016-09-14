@@ -16,7 +16,7 @@ public class AtomicBankTransaction {
 		System.out.println("Starting Transaction : "+tCount+" "+transaction);
 		try 
 		{
-			if((transaction.equals("w")) &&(amount < this.accAmount))
+			if((transaction.equals("w")) &&(amount < this.accAmount)&&(amount > 0))
 			{
 				this.accAmount = this.accAmount - amount;
 				Thread.sleep(10000);
