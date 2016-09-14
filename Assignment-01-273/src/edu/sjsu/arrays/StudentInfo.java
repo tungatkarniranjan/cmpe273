@@ -6,10 +6,6 @@ public class StudentInfo {
 
 	static Student stdInfoArray[] = new Student[20];
 	
-	/*StudentInfo(int size)
-	{
-		stdInfoArray = new Student[size];
-	}*/
 	
 	public void addStdDetails(String fname, String lname, String phnum, String addr, String Major, String Grade)
 	{
