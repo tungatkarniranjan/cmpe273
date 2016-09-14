@@ -2,6 +2,9 @@ package edu.sjsu.arrays;
 
 import static org.junit.Assert.*;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import org.junit.Test;
 
 import edu.sjsu.arrays.Student;
@@ -43,7 +46,9 @@ public class StudentInfoTest {
 	@Test
 	public void testUpdStudentRecord() {
 		System.out.println("\n\nTesting updStdDetails \n\n" );
-		stdInfo.dispStdDetails(4);
+		ByteArrayOutputStream outPrint = new ByteArrayOutputStream();
+		System.setOut(new PrintStream(outPrint));
+		
 		stdInfo.updStudentRecord(4, 1, "Tyler");
 		stdInfo.updStudentRecord(4, 2, "Durden");
 		stdInfo.updStudentRecord(4, 3, "6691234567");
@@ -51,6 +56,7 @@ public class StudentInfoTest {
 		stdInfo.updStudentRecord(4, 5, "CS");
 		stdInfo.updStudentRecord(4, 6, "A+");
 		stdInfo.dispStdDetails(4);
+		assertEquals(outPrint.toString().trim(),"Name : 	Tyler Durden\nContact Number : 	6691234567\nAddress : 	United States\nMajor : 	CS\nGrade : 	A+");
 	}
 
 	@Test
