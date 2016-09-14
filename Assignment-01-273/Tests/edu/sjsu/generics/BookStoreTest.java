@@ -12,7 +12,7 @@ public class BookStoreTest {
 	@Test
 	public void testAddBook() {
 		BookStore<String, String> bookStoreString = new BookStore<String,String>();
-		
+				
 		bookStoreString.addBook("ALCH", "Name : The Alchemist Author : Paulo Coelho Category : Fiction");
 		bookStoreString.addBook("SCRB", "Name : The Secret Author : Rhonda Bryne Category : Philosophy");
 		bookStoreString.addBook("EMPRMG", "Name : Empire of the Mughals Author : Alex Rutherford Category : History");
