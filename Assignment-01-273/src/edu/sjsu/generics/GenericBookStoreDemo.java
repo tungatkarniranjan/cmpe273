@@ -12,8 +12,8 @@ public class GenericBookStoreDemo {
 		
 		Scanner user_ip = new Scanner(System.in);
 		String ip = "";
-		System.out.println("Generics Demo");
-		System.out.println("Following books are added in GenericBookStore<String, String> bkStore by addBook method");
+		System.out.println("Book Store");
+		System.out.println("Book Details Added using <String, String>addBook : ");
 		bookStoreString.addBook("ALCH", "Name : The Alchemist Author : Paulo Coelho Category : Fiction");
 		bookStoreString.addBook("SCRB", "Name : The Secret Author : Rhonda Bryne Category : Philosophy");
 		bookStoreString.addBook("EMPRMG", "Name : Empire of the Mughals Author : Alex Rutherford Category : History");
